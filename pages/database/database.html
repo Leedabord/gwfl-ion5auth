@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content padding>
+<!-- ion-item> {{ JSON.stringify(items) }} </ion-item -->
   <ion-list>
     <ion-item *ngFor="let item of items | async" text-wrap>
       <p>{{ item.text }}</p>
