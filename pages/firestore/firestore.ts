@@ -14,6 +14,7 @@ export class FirestorePage {
     public navCtrl: NavController,
     db: AngularFirestore
   ) {
+    console.log('firestore.ts:: constr-1 ');
     this.travelers = db.collection('travelers').valueChanges();
   }
 }
